@@ -190,7 +190,9 @@
               class="text-slate-700 hover:text-slate-500 text-xs uppercase py-3 font-bold block"
               to="/auth/login"
             >
-              <i class="fa-solid fa-fingerprint text-slate-300 mr-2 text-sm"></i>
+              <i
+                class="fa-solid fa-fingerprint text-slate-300 mr-2 text-sm"
+              ></i>
               Login
             </router-link>
           </li>
@@ -234,7 +236,9 @@
               class="text-slate-700 hover:text-slate-500 text-xs uppercase py-3 font-bold block"
               to="/profile"
             >
-              <i class="fa-solid fa-user-circle text-slate-300 mr-2 text-sm"></i>
+              <i
+                class="fa-solid fa-user-circle text-slate-300 mr-2 text-sm"
+              ></i>
               Profile Page
             </router-link>
           </li>
@@ -269,7 +273,9 @@
               target="_blank"
               class="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
             >
-              <i class="fa-brands fa-css3-alt mr-2 text-slate-300 text-base"></i>
+              <i
+                class="fa-brands fa-css3-alt mr-2 text-slate-300 text-base"
+              ></i>
               CSS Components
             </a>
           </li>
@@ -291,7 +297,9 @@
               target="_blank"
               class="text-slate-700 hover:text-slate-500 text-sm block mb-4 no-underline font-semibold"
             >
-              <i class="fa-brands fa-js-square mr-2 text-slate-300 text-base"></i>
+              <i
+                class="fa-brands fa-js-square mr-2 text-slate-300 text-base"
+              ></i>
               Javascript
             </a>
           </li>
@@ -344,26 +352,25 @@
     </div>
   </nav>
 </template>
-); }
 
 <script>
-import NotificationDropdown from "@/components/Dropdowns/NotificationDropdown.vue";
-import UserDropdown from "@/components/Dropdowns/UserDropdown.vue";
+import NotificationDropdown from '@/components/Dropdowns/NotificationDropdown.vue'
+import UserDropdown from '@/components/Dropdowns/UserDropdown.vue'
 
 export default {
   data() {
     return {
-      collapseShow: "hidden",
-    };
+      collapseShow: 'hidden',
+    }
   },
   methods: {
     toggleCollapseShow: function (classes) {
-      this.collapseShow = classes;
+      this.collapseShow = classes
     },
   },
   components: {
     NotificationDropdown,
     UserDropdown,
   },
-};
+}
 </script>
